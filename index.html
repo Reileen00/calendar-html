@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        font-family: system-ui, sans-serif;
+    }
+
+    .calendar {
+        width: 420px;
+        margin: 40px auto;
+        border: 0.2rem solid black;
+        padding: 10px;
+    }
+
+    .calendar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .calendar-header button {
+        width: 40px;
+    }
+
+    .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 4px;
+    }
+
+    .calendar-grid button {
+        height: 40px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .day-name {
+        font-weight: bold;
+        background: #eee;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="calendar">
+
+    <!-- Date Picker -->
+    <div class="calendar-header">
+        <input type="date">
+        <button>📅</button>
+    </div>
+
+    <!-- Month Navigation -->
+    <div class="calendar-header">
+        <button>◀</button>
+        <strong>December 2025</strong>
+        <button>▶</button>
+    </div>
+
+    <!-- Days -->
+    <div class="calendar-grid">
+        <div class="day-name">S</div>
+        <div class="day-name">M</div>
+        <div class="day-name">T</div>
+        <div class="day-name">W</div>
+        <div class="day-name">T</div>
+        <div class="day-name">F</div>
+        <div class="day-name">S</div>
+
+        <!-- Dates -->
+        <button>1</button><button>2</button><button>3</button>
+        <button>4</button><button>5</button><button>6</button>
+        <button>7</button><button>8</button><button>9</button>
+        <button>10</button><button>11</button><button>12</button>
+        <button>13</button><button>14</button><button>15</button>
+        <button>16</button><button>17</button><button>18</button>
+        <button>19</button><button>20</button><button>21</button>
+        <button>22</button><button>23</button><button>24</button>
+        <button>25</button><button>26</button><button>27</button>
+        <button>28</button>
+    </div>
+
+</div>
+
+</body>
+</html>
